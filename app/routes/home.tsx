@@ -75,10 +75,5 @@ export default function Home() {
     </section>
 
 
-    <footer className="fixed bottom-4 left-4 text-2xl">
-      <p className="bg-gradient-to-r from-black to-stone-400 bg-clip-text text-transparent">Ansh Upadhyay</p>
-    </footer>
-
-
   </main>
 }
