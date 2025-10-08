@@ -48,7 +48,7 @@ export default function Home() {
         {!loadingResumes && resumes?.length === 0 ? (
             <h2>No resumes found. Upload your first resume to get feedback.</h2>
         ): (
-          <h2>Review your applications and optimize your profile for every job.</h2>
+            <h2>Review your applications and optimize your profile for every job.</h2>
         )}
       </div>
       {loadingResumes && (
@@ -58,11 +58,11 @@ export default function Home() {
       )}
 
       {!loadingResumes && resumes.length > 0 && (
-        <div className="resumes-section">
-          {resumes.map((resume) => (
-              <ResumeCard key={resume.id} resume={resume} />
-          ))}
-        </div>
+          <div className="resumes-section">
+            {resumes.map((resume) => (
+                <ResumeCard key={resume.id} resume={resume} />
+            ))}
+          </div>
       )}
 
       {!loadingResumes && resumes?.length === 0 && (
@@ -73,5 +73,12 @@ export default function Home() {
           </div>
       )}
     </section>
+
+
+    <footer className="fixed bottom-4 left-4 text-2xl">
+      <p className="bg-gradient-to-r from-black to-stone-400 bg-clip-text text-transparent">Ansh Upadhyay</p>
+    </footer>
+
+
   </main>
 }
